@@ -7,30 +7,30 @@
         <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="css/responsive.css"  media="screen,projection"/>
     </head>
-
     <body>
         <header>
             <nav class="center-container">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">
+                    <a href="#home" class="brand-logo">
                         <img src="images/logo.png" alt="Bytes2Bot">
                     </a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="nav-ul right hide-on-med-and-down">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="" class="active">Portfolio</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Contact Us</a></li>
+                    <a href="#home" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="nav-ul right hide-on-med-and-down menu-items">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                         <li><a href="" class="social-map"><img src="images/social.png"  usemap="#planetmap" alt="social"></a></li>
                     </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Contact Us</a></li>
+                    <ul class="side-nav menu-items" id="mobile-demo">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                         <li class="social-li"><img src="images/social.png"  usemap="#planetmap" alt="social"></li>
+                        <li class="close"><i class="material-icons" onclick="$('.button-collapse').sideNav('hide');">close</i></li>
                     </ul>
                 </div>
             </nav>
@@ -39,52 +39,64 @@
                 <area shape="circle" coords="59,15,5" href="" alt="">
             </map>
         </header>
-        <section class="video-thumb">
-            <i class="play-button"></i>
-            <iframe width="100%" height="583" src="https://www.youtube.com/embed/Alz3PN4rxj4" frameborder="0" allowfullscreen></iframe>
-        </section>
-        <section class="describe">
-            <div class="center-container">
-                <div class="row my-row">
-                    <div class="col s12 m4">
-                        <div class="shapes">
-                            <div class="shape"></div>
+        <section class=" scrollspy" id="home">
+            <div class="video-thumb">
+                <i class="material-icons close-video">close</i>
+                <div class="content">
+                    <i class="play-button"></i>
+                    <p>Lets Grow Digital</p>
+                </div>
+                <!--            <iframe width="100%" height="583" src="https://www.youtube.com/embed/Alz3PN4rxj4" frameborder="0" allowfullscreen></iframe>-->
+                <!--            <video id="video-new" preload="auto" poster="http://www.landmarkit.in/Images/first-frame.jpg" autoplay="autoplay" loop="loop" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; z-index: 0; width: 1920px; height:583px;margin:0 auto;"><source src="http://www.landmarkit.in/Images/lmit.webm" type="video/webm"><source src="http://www.landmarkit.in/Images/lmit.mp4" type="video/mp4"><source src="http://www.landmarkit.in/Images/lmit.ogv" type="video/ogv">bgvideo</video>-->
+                <video preload="yes" id="innopark-video" autoplay="" loop=""  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; z-index: 0; width: 100%; height:583px;margin:0 auto;object-fit: fill;">
+                    <source src="http://www.innopark.in/video/innopark-movie.mp4" type="video/mp4">
+                    <source src="http://www.innopark.in/video/innopark-movie.ogg" type="video/ogg">
+                    <source src="http://www.innopark.in/video/innopark-movie.webm" type="video/webm; codecs=vp8, vorbis">
+                </video>
+            </div>
+
+            <div class="describe">
+                <div class="center-container">
+                    <div class="row my-row">
+                        <div class="col s12 m4">
+                            <div class="shapes">
+                                <div class="shape"></div>
+                            </div>
+                        </div>
+                        <div class="col s12 m8">
+                            <i class="shape-two"></i>
+                            <h2>Bytes2bots</h2>
+                            <p>is a System Integrator and IT Services Enterprise with a team of higly skilled and talanted IT industry veterans and operates as an independent startup. This team can be trusted basis of hard core hands on experience in IT Systems Integration, IT Outsourcing and IT Operations.</p>
                         </div>
                     </div>
-                    <div class="col s12 m8">
-                        <i class="shape-two"></i>
-                        <h2>Bytes2bots</h2>
-                        <p>is a System Integrator and IT Services Enterprise with a team of higly skilled and talanted IT industry veterans and operates as an independent startup. This team can be trusted basis of hard core hands on experience in IT Systems Integration, IT Outsourcing and IT Operations.</p>
-                    </div>
+                    <hr/>
                 </div>
-                <hr/>
             </div>
-        </section>
-        <section class="key-features">
-            <div class="center-container">
-                <h2>The key Features of our Job</h2>
-                <div class="feature-box">
-                    <div class="feature">
-                        <div class="feature-img feature-one"></div>
-                        <div class="feature-text">Product Development</div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-img feature-two"></div>
-                        <div class="feature-text">Consulting & Staff Augmentation</div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-img feature-three"></div>
-                        <div class="feature-text">Mobility solutions for enterprise</div>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-img feature-four"></div>
-                        <div class="feature-text">Internet of everything & Data Analytics</div>
+            <div class="key-features">
+                <div class="center-container">
+                    <h2>The key Features of our Job</h2>
+                    <div class="feature-box">
+                        <div class="feature">
+                            <div class="feature-img feature-one"></div>
+                            <div class="feature-text">Product Development</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-img feature-two"></div>
+                            <div class="feature-text">Consulting & Staff Augmentation</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-img feature-three"></div>
+                            <div class="feature-text">Mobility solutions for enterprise</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-img feature-four"></div>
+                            <div class="feature-text">Internet of everything & Data Analytics</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="serve">
+        <section class="serve scrollspy" id="services" >
             <div class="center-container">
                 <i class="shape-three"></i>
                 <h2>Whom we serve</h2>
@@ -109,7 +121,7 @@
             </div>
         </section>
 
-        <section class="technology">
+        <section class="technology scrollspy" id="portfolio">
             <div class="center-container">
                 <h2>Technologies</h2>
                 <div class="tech-box">
@@ -156,41 +168,41 @@
             </div>
         </section>
 
-        <section class="team">
-            <h2>Buzz about B2B</h2>
+        <section class="team scrollspy" id="testimonials">
+            <h2>Buzz about Bytes2Bots</h2>
             <div class="team-container">
                 <div class="team-members">
                     <div class="member">
                         <div class="role-caption">Design Thinking</div>
                         <div class="dp">
-                            <img src="images/srinivas.jpg" alt="srinivas">
+                            <img src="images/green-circle-medium.png" alt="Nithi">
                         </div>
-                        <div class="member-name">Srinivas</div>
+                        <div class="member-name">Nithi</div>
                         <div class="member-details">
-                            <span class="name">Srinivasulu Palle</span>
-                            <span class="role">Design Head</span>
+                            <span class="name">Nithyanantham Subramaniam</span>
+                            <span class="role">Cloud Developer</span>
                         </div>
                     </div>
                     <div class="member">
                         <div class="role-caption">Design Thinking</div>
                         <div class="dp">
-                            <img src="images/srinivas.jpg" alt="srinivas">
+                            <img src="images/green-circle-medium.png" alt="Shekar">
                         </div>
-                        <div class="member-name">Srinivas</div>
+                        <div class="member-name">amshekar</div>
                         <div class="member-details">
-                            <span class="name">Srinivasulu Palle</span>
-                            <span class="role">Design Head</span>
+                            <span class="name">Shekar Gadamoni</span>
+                            <span class="role">Cloud Developer</span>
                         </div>
                     </div>
                     <div class="member">
                         <div class="role-caption">Design Thinking</div>
                         <div class="dp">
-                            <img src="images/srinivas.jpg" alt="srinivas">
+                            <img src="images/green-circle-medium.png" alt="srinivas">
                         </div>
-                        <div class="member-name">Srinivas</div>
+                        <div class="member-name">Krishna</div>
                         <div class="member-details">
-                            <span class="name">Srinivasulu Palle</span>
-                            <span class="role">Design Head</span>
+                            <span class="name">Krishna Prasad</span>
+                            <span class="role">Consultant</span>
                         </div>
                     </div>
                     <div class="member">
@@ -230,7 +242,7 @@
             </div>
         </section>
         <footer>
-            <div class="center-container">
+            <div class="center-container scrollspy" id="contact">
                 <div class="row">
                     <div class="col s12 m6 push-m6">
                         <div class="form-box">
@@ -242,7 +254,7 @@
                                 </div>
                                 <div class="input-field">
                                     <input placeholder="Email" id="email" type="text" class="validate">
-                                    <label class="active" for="email">Name</label>
+                                    <label class="active" for="email">email</label>
                                 </div>
                                 <div class="input-field">
                                     <textarea placeholder="Subject" id="textarea1" class="materialize-textarea"></textarea>
@@ -258,8 +270,8 @@
                         <div class="address-box">
                             <i class="shape-four"></i>
                             <div class="line-one">Pheonix inc.</div>    
-                            <div class="line-two">HitecCity, Hyderabad<br/>India 00038</div>    
-                            <div class="line-two">Phone: 91- 7675 958 822<br/>contact_us@bytes2bots.com</div>
+                            <div class="line-two">HitecCity, Hyderabad<br/>India 500038</div>    
+                            <div class="line-two">Phone: 91- 9578 458 681<br/>contact_us@bytes2bots.com</div>
                             <div class="line-two"><img src="images/social.png" usemap="#planetmap" alt="social"></div>    
                             <div class="line-three">Copyright &copy; 2017 Bytes2Bots</div>    
                         </div>
@@ -272,27 +284,70 @@
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
         <script>
-            $(function () {
-                $(".button-collapse").sideNav();
-                Materialize.updateTextFields();
-                if ($(".chat-box-actor").length) {
-                    $(".chat-box-actor").click(function () {
-                        if ($(".chat-box").css("display") == "none") {
-                            $(".chat-box").show();
-                            $(".chat-box-actor").addClass("close");
-                        } else {
-                            $(".chat-box").hide();
-                            $(".chat-box-actor").removeClass("close");
-                        }
-                    });
-                }
-            });
-            $(document).on('click', '.start-video', function () {
-                $(this).hide();
-                $("#player").show();
-                $("#thumbnail_container").hide();
-                player.playVideo();
-            });
+                            $(function () {
+                                $(".button-collapse").sideNav();
+                                $('.scrollspy').scrollSpy();
+                                Materialize.updateTextFields();
+                                if ($(".chat-box-actor").length) {
+                                    $(".chat-box-actor").click(function () {
+                                        if ($(".chat-box").css("display") == "none") {
+                                            $(".chat-box").show();
+                                            $(".chat-box-actor").addClass("close");
+                                        } else {
+                                            $(".chat-box").hide();
+                                            $(".chat-box-actor").removeClass("close");
+                                        }
+                                    });
+                                }
+
+                                $(".video-thumb .play-button").click(function () {
+                                    $(".video-thumb .content").hide();
+                                    $(".video-thumb .close-video").show();
+                                });
+                                $(".video-thumb .close-video").click(function () {
+                                    $(".video-thumb .content").show();
+                                    $(".video-thumb .close-video").hide();
+                                });
+                                $(".menu-items li a").click(function () {
+                                    var $root = $('html, body');
+                                    $(".menu-items li a.active").removeClass("active");
+//                                    $(this).addClass("active");
+                                    var href = $.attr(this, 'href');
+                                    if ($(window).scrollTop() >= 100) {
+                                        if (href == "#home") {
+                                            ofset = 0;
+                                        } else {
+                                            ofset = 130;
+                                        }
+                                    } else {
+                                        if (href == "#home") {
+                                            ofset = 100;
+                                        } else {
+                                            ofset = 230;
+                                        }
+                                    }
+                                    $('.button-collapse').sideNav('hide');
+                                    $root.animate({
+                                        scrollTop: $(href).offset().top - ofset
+                                    }, 800, function () {
+                                        window.location.hash = href;
+                                    });
+                                    return false;
+                                });
+                            });
+                            $(window).scroll(function () {
+                                if ($(window).scrollTop() >= 100) {
+                                    $("header").addClass("fixed");
+                                } else {
+                                    $("header").removeClass("fixed");
+                                }
+                            });
+                            $(document).on('click', '.start-video', function () {
+                                $(this).hide();
+                                $("#player").show();
+                                $("#thumbnail_container").hide();
+                                player.playVideo();
+                            });
         </script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 html,body {
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +15,16 @@ html,body {
 }
 header{
     height: 100px;
+}
+header.fixed{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 0 0 14px 0 #807d7d;
+    transition:0.4s top cubic-bezier(.3, .73, .3, .74);
 }
 .center-container{
     max-width: 1200px;
@@ -57,11 +67,52 @@ nav.center-container{
 .social-map{
     margin: 15px 0 0 50px;
 }
+.close i.material-icons {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    /* background-color: #3e224a; */
+    height: auto;
+    line-height: 25px;
+    padding: 7px;
+    border-radius: 50% 50%;
+    color: #3e2049;
+    cursor: pointer;
+}
 .video-thumb{
-    background: url(../images/thumbnail-video.jpg) no-repeat center transparent;
-    background-size: cover;
     height: 583px;
     position: relative;
+}
+.video-thumb .content{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    /*    background: url(../images/thumbnail-video.jpg) no-repeat center transparent;
+        background-size: cover;*/
+    background-color:rgba(255, 204, 0, 0.9);
+    z-index:1;
+}
+.video-thumb .close-video{
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    font-size: 34px;
+    background-color: rgba(255, 215, 55, 0.8);
+    border-radius: 50%;
+    padding: 6px;
+}
+.video-thumb .content p{
+    font-weight: 200;
+    text-align: center;
+    margin: 140px 0 0;
+    font-size: 60px;
+    color: #000; 
 }
 .ytp-large-play-button svg{
     display: none;
@@ -95,6 +146,7 @@ i.play-button{
     width: 100%;
     height: 345px;
     margin: 0 auto;
+    z-index: 1;
 }
 .describe h2{
     margin: 70px 0 10px;
@@ -119,6 +171,7 @@ i.play-button{
     background-size: contain;
     width: 45px;
     height: 45px;
+    z-index: 1;
 }
 .describe hr{
     border:none;
@@ -350,6 +403,7 @@ i.play-button{
 .team-container{
     background:url(../images/team-bg.jpg) no-repeat center transparent;
     min-height: 730px; 
+    background-attachment: fixed;
 }
 .team-members{
     max-width: 1368px;
@@ -525,6 +579,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:focus:not([reado
     cursor: pointer;
     background: url(../images/chat.svg) no-repeat center #ddd;
     background-size: 60%;
+    z-index: 999;
 }
 .chat-box-actor.close{
     background: url(../images/close.svg) no-repeat center #ddd;
