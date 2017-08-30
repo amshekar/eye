@@ -35,8 +35,8 @@
                 </div>
             </nav>
             <map name="planetmap">
-                <area shape="circle" coords="15,15,5" href="" alt="">
-                <area shape="circle" coords="59,15,5" href="" alt="">
+                <area shape="circle" coords="15,15,15" target="_blank" href="https://www.facebook.com/Bytes2bots-1268757956511771/" alt="">
+                <area shape="circle" coords="59,15,15" target="_blank" href="https://twitter.com/bytes2bots" alt="">
             </map>
         </header>
         <section class=" scrollspy" id="home">
@@ -48,7 +48,7 @@
                 </div>
                 <!--            <iframe width="100%" height="583" src="https://www.youtube.com/embed/Alz3PN4rxj4" frameborder="0" allowfullscreen></iframe>-->
                 <!--            <video id="video-new" preload="auto" poster="http://www.landmarkit.in/Images/first-frame.jpg" autoplay="autoplay" loop="loop" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; z-index: 0; width: 1920px; height:583px;margin:0 auto;"><source src="http://www.landmarkit.in/Images/lmit.webm" type="video/webm"><source src="http://www.landmarkit.in/Images/lmit.mp4" type="video/mp4"><source src="http://www.landmarkit.in/Images/lmit.ogv" type="video/ogv">bgvideo</video>-->
-                <video preload="yes" id="innopark-video" autoplay="" loop=""  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; z-index: 0; width: 100%; height:583px;margin:0 auto;object-fit: fill;">
+                <video preload="yes" id="innopark-video" controls autoplay="" loop=""  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; z-index: 0; width: 100%; height:583px;margin:0 auto;object-fit: fill;">
                     <source src="http://www.innopark.in/video/innopark-movie.mp4" type="video/mp4">
                     <source src="http://www.innopark.in/video/innopark-movie.ogg" type="video/ogg">
                     <source src="http://www.innopark.in/video/innopark-movie.webm" type="video/webm; codecs=vp8, vorbis">
@@ -193,7 +193,7 @@
                             <span class="name">Shekar Gadamoni</span>
                             <span class="role">Cloud Developer</span>
                         </div>
-                    </div>                   
+                    </div>          
                     <div class="member">
                         <div class="role-caption">Design Thinking</div>
                         <div class="dp">
@@ -205,7 +205,7 @@
                             <span class="role">Design Head</span>
                         </div>
                     </div>
-                     <div class="member">
+                    <div class="member">
                         <div class="role-caption">Design Thinking</div>
                         <div class="dp">
                             <img src="images/green-circle-medium.png" alt="srinivas">
@@ -270,8 +270,8 @@
                         <div class="address-box">
                             <i class="shape-four"></i>
                             <div class="line-one">Pheonix inc.</div>    
-                            <div class="line-two">HitecCity, Hyderabad<br/>India 500038</div>    
-                            <div class="line-two">Phone: 91- 9578 458 681<br/>contact_us@bytes2bots.com</div>
+                            <div class="line-two">HitecCity, Hyderabad<br />India 500038</div>
+                            <div class="line-two">Phone: 91- 9578 458 681<br />contact_us@bytes2bots.com</div>
                             <div class="line-two"><img src="images/social.png" usemap="#planetmap" alt="social"></div>    
                             <div class="line-three">Copyright &copy; 2017 Bytes2Bots</div>    
                         </div>
@@ -279,11 +279,12 @@
                 </div>
             </div>
         </footer>
-        <div class="chat-box"></div>
-        <div class="chat-box-actor open"></div>
+        <!--<div class="chat-box"></div>
+        <div class="chat-box-actor open"></div>-->
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
         <script>
+                            video = document.getElementsByTagName("video");
                             $(function () {
                                 $(".button-collapse").sideNav();
                                 $('.scrollspy').scrollSpy();
@@ -303,6 +304,8 @@
                                 $(".video-thumb .play-button").click(function () {
                                     $(".video-thumb .content").hide();
                                     $(".video-thumb .close-video").show();
+                                    video.addEventListener('playing', mox(false), false);
+                                    mox(false);
                                 });
                                 $(".video-thumb .close-video").click(function () {
                                     $(".video-thumb .content").show();
@@ -348,6 +351,13 @@
                                 $("#thumbnail_container").hide();
                                 player.playVideo();
                             });
+                            function mox(s) {
+                                if (s) {
+                                    video.controls = "controls";
+                                } else {
+                                    video.controls = "";
+                                }
+                            }
         </script>
     </body>
 </html>
