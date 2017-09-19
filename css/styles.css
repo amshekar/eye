@@ -426,7 +426,24 @@ i.play-button{
 }
 .member:hover,.member.active{
     background-color: #FFCC00;
+    
 }
+.member-one:hover,.member-one.active{
+    
+        background-color: #FFCC00;
+      
+    }
+.member-two:hover,.member-two.active{
+    background-color: #319FDA;
+   
+       
+    
+    }
+.member-three:hover,.member-three.active{
+    
+    background-color: #9FCC3D;
+    
+    }
 .role-caption, .dp, .member-details, .member:hover .member-name{
     display: none;
 }
